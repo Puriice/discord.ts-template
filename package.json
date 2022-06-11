@@ -1,0 +1,24 @@
+{
+	"name": "discord-template",
+	"version": "1.0.0",
+	"main": "./src/index.js",
+	"author": "Purinutt Amartayavis <ice.ice5335@gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"@discordjs/builders": "^0.13.0",
+		"@discordjs/rest": "^0.4.1",
+		"discord-api-types": "^0.33.0",
+		"discord.js": "^13.7.0",
+		"dotenv": "^16.0.1"
+	},
+	"scripts": {
+		"start": "node ./script/start.js production",
+		"dev": "nodemon ./script/start.js development",
+		"deploy": "node ./script/deploy.js",
+		"gen": "node ./script/generate.js"
+	},
+	"devDependencies": {
+		"eslint": "^8.15.0",
+		"nodemon": "^2.0.16"
+	}
+}
