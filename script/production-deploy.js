@@ -11,11 +11,11 @@ const TOKEN = process.env.TOKEN;
 if (!CLIENT_ID) throw new Error('CLIENT_ID is not defined. Please specify it in .env');
 if (!TOKEN) throw new Error('TOKEN is not defined. Please specify it in .env');
 
-const commandsPath = path.resolve(__dirname, '..', 'src', 'commands');
+const commandsPath = path.resolve(__dirname, '..', 'dist', 'commands');
 const commands = [];
 
 fs.readdirSync(commandsPath).filter(file => file.endsWith('.js')).forEach(file => {
-	const command = require(path.join(commandsPath, file));
+	const command = require(path.join(commandsPath, file)).default;
 	commands.push(command.data);
 });
 

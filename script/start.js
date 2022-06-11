@@ -7,4 +7,4 @@ if (args[0].toLowerCase() === 'dev' || args[0].toLowerCase() === 'development') 
 	require(path.join(__dirname, 'production-deploy.js'));
 }
 
-require(path.resolve(__dirname, '..', 'src', 'index.js'));
+require(path.resolve(__dirname, '..', 'dist', 'index.js'));

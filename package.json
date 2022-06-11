@@ -18,6 +18,7 @@
 		"gen": "node ./script/generate.js"
 	},
 	"devDependencies": {
+		"@types/node": "^17.0.42",
 		"eslint": "^8.15.0",
 		"nodemon": "^2.0.16"
 	}
